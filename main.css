@@ -1,3 +1,118 @@
 body {
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(24, 23, 23);
+    font-family: 'Balsamiq sans', Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 50px;
+    text-align: center;
+    text-shadow: 2px 2px 10px aqua, 2px 2px 10px rgb(161, 253, 119);
+}
+.fa-book {
+    transform: rotate(-25deg);
+}
+.myBooks-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+    background-color: rgba(119, 253, 253, 0.25);
+}
+.myBooks-container .column {
+   padding: 10px;
+   background-color: transparent;
+   margin: 10px;
+   color: rgb(255, 255, 255);
+   border-radius: 11px;
+   box-shadow: 2px 2px 20px aqua, 2px 2px 10px rgb(161, 253, 119);
+}
+.main-container {
+    background-image: url(../images/library.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 800px;
+    position: relative;
+}
+.addBook {
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 700;
+    padding: 20px;
+    border-radius: 20px;
+    outline: none;
+    border: 1px solid rgba(255, 255, 255, 0);
+    box-shadow: 2px 2px 10px aqua, 2px 2px 10px rgb(161, 253, 119);
+    text-shadow: 2px 2px 50px aqua, 2px 2px 50px rgb(161, 253, 119);
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 50px;
+    left: 550px;
+    cursor: pointer;
+}
+.modal {
+    background-color: rgba(0, 0, 0, 0.8);
+    box-shadow: 2px 2px 10px aqua, 2px 2px 10px rgb(161, 253, 119);
+    display: block;
+    margin: 0 auto;
+    width: 600px;
+    position: fixed;
+    top: 120px;
+    left: 320px;
+    padding: 20px;
+    outline: none;
+    border-radius: 11px;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 50px aqua, 2px 2px 50px rgb(161, 253, 119);
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s;
+    z-index: 10;
+}
+.modal.active {
+    visibility: visible;
+    opacity: 1;
+}
+.modal h2 {
+    font-size: 30px;
+    line-height: 30px;
+    padding: 10px;
+}
+.modal label {
+    font-size: 20px;
+    line-height: 20px;
+}
+.modal input {
+    padding: 10px;
+    width: 500px;
+    margin: 20px 0px;
+    outline: none;
+    border-radius: 4px;
+    border: none;
+}
+.modal #read {
+    width: 20px;
+}
+.cancel, .upload {
+    border:none;
+    border-radius: 11px;
+    background-color:  rgba(201, 41, 76, 0.25);
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 700;
+    padding: 15px 25px;
+    outline: none;
+    cursor: pointer;
+}
+.cancel {
+    margin-left: 180px;
+}
+.upload {
+    margin-left: 20px;
 }

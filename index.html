@@ -5,14 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MY LIBRARY</title>
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet"> 
 </head>
 <body>
     <header>
-        <h1>MY LIBRARY</h1>
+        <h1>MY LIBRARY <i class="fa fa-book" aria-hidden="true"></i>
+        </h1>
     </header>
+        <div class="myBooks-container">
+            <div class="column">
+                <h3>Shelly and Curts</h3>
+                <p>Author: Jaygee Robi</p>
+                <p>Pages: 356</p>
+                <label for="done-reading">Done reading</label>
+                <input id="done-read" type="checkbox"><br>
+                <button class="remove">REMOVE</button>
+            </div>
+            <div class="column">
+                <h3>The Adventures of Reiny The Boo</h3>
+                <p>Author: Jackie R. Chan</p>
+                <p>Pages: 500</p>
+                <label for="done-reading">Done reading</label>
+                <input id="done-read" type="checkbox"><br>
+                <button class="remove">REMOVE</button>
+            </div>
+            <div class="column">
+                <h3>God Infinitely Is</h3>
+                <p>Author: John Piper</p>
+                <p>Pages: 600</p>
+                <label for="done-reading">Done reading</label>
+                <input id="done-read" type="checkbox"><br>
+                <button class="remove">REMOVE</button>
+            </div>
+            <div class="column">
+                <h3>The Word In The Beginning</h3>
+                <p>Author: Shai Linne</p>
+                <p>Pages: 220</p>
+                <label for="done-reading">Done reading</label>
+                <input id="done-read" type="checkbox"><br>
+                <button class="remove">REMOVE</button>
+            </div>
+        </div>
     <div class="main-container">
-
+        <div class="modal" id="modal">
+            <h2>Add Your Book</h2>
+            <label for="title">Title:</label><br>
+            <input id="title" type="text" placeholder="The Adventures of Reiny the Boo"><br>
+            <label for="author">Author:</label><br>
+            <input id="author" type="text" placeholder="Jackie R. Chan"><br>
+            <label for="pages">Pages:</label><br>
+            <input id="pages" type="number" placeholder="400" min=1><br>
+            <label for="Read">Read:</label>
+            <input id="read" type="checkbox"><br>
+            <button class="cancel">CANCEL</button>
+            <button class="upload">UPLOAD</button>
+        </div>
+        <button class="addBook">Add Book</button>
     </div>
-    <script>src="script.js"</script>
+   
+    <script src="script.js"></script>
 </body>
 </html>
